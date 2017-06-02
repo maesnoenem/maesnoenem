@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
+import main from '../styles/global.css';
 
 class Header extends Component {
   render() {
     return (
       <div>
         <header className="header">
-          <div>
-            <a hef="index.html">Mães no ENEM</a>
+          <div className="home-menu-titulo">
+            <a hef="#">Mães no ENEM</a>
           </div>
-          <div>
-            <ul>
-              <li>Início</li>
-              <li>Mapa</li>
-              <li>Colabore</li>
-            </ul>
-          </div>
+          <ul className="home-menu-list">
+            <li className="home-menu-list-item">Início</li>
+            <li className="home-menu-list-item">Mapa</li>
+            <li className="home-menu-list-item">Colabore</li>
+          </ul>
         </header>
       </div>
     );
