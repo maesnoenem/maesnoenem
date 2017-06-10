@@ -1,18 +1,26 @@
 {
   "name": "maesnoenem",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "react-scripts": "0.9.5"
-  },
+  "description": "Projeto colaborativo para auxiliar mães que irão prestar o Exame Nacional do Ensino Médio ENEM.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/**/*.js"
+  },
+  "keywords": [
+    "ENEM"
+  ],
+  "author": "Simone Amorim <simoneas02@hotmail.com> (https://simoneas02.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-install": "^0.6.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-stylint": "^4.0.0",
+    "gulp-stylus": "^2.6.0"
   }
 }

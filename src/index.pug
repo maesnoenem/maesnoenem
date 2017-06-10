@@ -1,0 +1,58 @@
+doctype html
+html(lang="pt-br")
+
+  head
+    //- style
+    //- ===========================================
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet" href="assets/styles/main.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" )
+
+    //- meta
+    //- ===========================================
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    link(rel="icon" href="assets/img/favicon.png")
+
+    //- Variables
+    //- ===========================================
+    - var title = "Mães no ENEM"
+    - var description = "Projeto colaborativo para auxiliar mães que irão prestar o Exame Nacional do Ensino Médio ENEM."
+    - var url = "https://maesnoenem.github.io/"
+    - var image = "https://maesnoenem.github.io/assets/img/logo.jpg"
+
+    //- Open graph
+    //- ===========================================
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:url" content=url)
+    meta(property="og:image" content=image)
+
+    //- Twitter cards
+    //- ===========================================
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:url" content=url)
+    meta(name="twitter:image" content=image)
+
+    //- SEO
+    //- ===========================================
+    meta(name="description" content=description)
+    title=title
+
+  body
+
+    header
+      h1 Hello Word
+
+    main
+      p My Web App
+
+    footer Made with love
+
+    //- Google Analytics
+    //- ===========================================
+    include includes/google-analytics.html
