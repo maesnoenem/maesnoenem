@@ -53,7 +53,7 @@ Go to: [localhost:8080](http://localhost:8080/)
 	├── .babelrc
 	├──  bower.json
 	├── .editorconfig
-  ├── .eslintrc.js
+	├── .eslintrc.js
 	├── .gitignore
 	├── gulpfile.js
 	├── package.json
