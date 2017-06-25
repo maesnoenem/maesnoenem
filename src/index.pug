@@ -6,7 +6,7 @@ html(lang="pt-br")
     //- ===========================================
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
     link(rel="stylesheet" href="assets/styles/main.css")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" )
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" )
 
     //- meta
     //- ===========================================
@@ -46,13 +46,23 @@ html(lang="pt-br")
   body
 
     main.main
-      div.banner
-        div.banner-content
-          h1.banner-content__title Porque lugar de mãe</br>é onde ela quiser
-          p.banner-content__description por mais mães na <span class="banner-content__description__featured">universidade</span>.
+      header.header
+
+        div.content-main
+          h1.content-main__title Porque lugar de mãe</br>é onde ela quiser
+          p.content-main__description por mais mães na <span class="content-main__description__featured">universidade</span>.
+
           div.arrow-down
-            a.arrow-down__link(href="#" alt="")
-              img.arrow-down__img(src="./assets/img/arrow-down.png")
+            a.arrow-down__link(href="#sobre")
+              img.arrow-down__link__img(src="./assets/img/arrow-down.png" alt="seta que leva para a seção sobre")
+
+      section.text(id="sobre")
+        h2.text__title como tudo começou...
+        p.text__description O Mães no ENEM teve início em agosto de 2016 quando a jornalista Fernanda Vicente decidiu participar de uma corrente no Facebook em que mulheres se disponibilizavam a ajudar as mães que iriam prestar o Exame Nacional do Ensino Médio.
+
+        p.text__description Inspirada na corrente lançada na rede social, Fernanda fez uma postagem em seu perfil se oferecendo para cuidar dos filhos das mulheres da região que mora.
+ 
+        p.text__description A adesão e o interesse de outras mulheres foram imediatos e a partir daí, voluntárias de todo o país começaram a surgir. Nascia assim, o Mães no Enem.
 
     //- Google Analytics
     //- ===========================================
