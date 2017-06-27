@@ -19,8 +19,8 @@ html(lang="pt-br")
     //- ===========================================
     - var title = "Mães no ENEM"
     - var description = "Projeto colaborativo para auxiliar mães que irão prestar o Exame Nacional do Ensino Médio ENEM."
-    - var url = "https://maesnoenem.github.io/"
-    - var image = "https://maesnoenem.github.io/assets/img/logo.jpg"
+    - var url = "https://maesnoenem.github.io/maesnoenem//"
+    - var image = "https://github.com/maesnoenem/maesnoenem/blob/developer/src/assets/img/logo.jpg"
 
     //- Open graph
     //- ===========================================
@@ -93,6 +93,23 @@ html(lang="pt-br")
         p.text__description 44 mães foram atendidas pela ação durante os dias do Enem.
 
         p.text__description O projeto atende entre 10 e 15 mães por mês
+
+      section.text
+        h2.text__title faça parte
+        p.text__description Para se cadastrar como voluntária ou acionar ajuda enquanto mãe, é necessário enviar um e-mail para o projeto solicitando a ficha de cadastro. Aguardamos o seu contato.
+
+        form.contact(action="")
+          p.contact__item
+            label.contact__item__name(for="name") Nome
+            input.contact__item__input(id="name" type="text" name="name")
+
+          p.contact__item
+            label.contact__item__name(for="mail") Email
+            input.contact__item__input(type="email" id="mail" name="usermail" required)
+
+          p.contact__item
+            label.contact__item__name(for="text") Mensagem
+            textarea.contact__item__input(id="text" name="regular")
 
     //- Google Analytics
     //- ===========================================

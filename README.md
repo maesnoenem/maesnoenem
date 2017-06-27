@@ -63,7 +63,7 @@ Go to: [localhost:8080](http://localhost:8080/)
 
 ## Tarefas Automatizadas
 
-- `$ gulp build`: Compila, concatena e minifica todos os aruivos.
+- `$ gulp build`: Compila, concatena e minifica todos os arquivos.
 - `$ gulp serve`: Observa os arquiuvos para construir e iniciar um servidor estático.
 - `$ gulp stylint`: Validata Stylus.
 - `$ gulp vulcanize`: Concatena um set de Web Components em um arquivo.
