@@ -1,0 +1,26 @@
+.btn
+    color var(--secundary-color)
+    background var(--bg-color)
+    font-size 14px
+    width 100%
+    max-width 50%
+    height 40px
+    border 0
+    padding 10px
+    margin 10px 0 10px auto
+    cursor pointer
+    background-image linear-gradient(to bottom, var(--bg-color), #ff99ff)
+
+@media(max-width: 560px)
+    .btn
+        max-width 75%
+        margin 10px auto
+
+.btn:hover
+    color var(--bg-color)
+    background var(--secundary-color)
+    border 2px solid var(--bg-color)
+    font-weight 700
+
+.btn:active
+    transform translateY(1px)

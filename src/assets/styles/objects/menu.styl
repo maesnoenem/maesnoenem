@@ -1,0 +1,52 @@
+.menu
+    position fixed
+    right 100px
+    padding 15px 10px
+    width 200px
+    height 250px
+    z-index 1
+    bottom 200px
+
+@media(max-width: 1100px)
+    .menu
+        right 40px
+
+@media(max-width: 860px)
+    .menu
+        right 10px
+        padding 15px 10px
+        width 200px
+        height 250px
+        bottom 5%
+
+.menu__list
+    list-style none
+    margin 10px 0
+    padding 5px
+    font-size 15px
+
+.menu__list__item
+    margin 5px 0
+    text-align right
+
+.menu__list__item__link
+    text-decoration none
+    color var(--primary-color)
+    padding 5px
+    cursor pointer
+
+.menu__list__item__link:hover
+    color var(--secundary-color)
+    background var(--bg-color)
+    font-weight 500
+
+.menu__list__item:active
+    transform translateY(1px)
+
+@media(max-width: 860px)
+    .menu__list__item__link
+        color var(--secundary-color)
+
+    .menu__list__item__link:hover
+        color var(--bg-color)
+        background var(--secundary-color)

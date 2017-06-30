@@ -1,0 +1,158 @@
+doctype html
+html(lang="pt-br")
+
+  head
+    //- style
+    //- ===========================================
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(rel="stylesheet" href="assets/styles/main.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" )
+
+    //- meta
+    //- ===========================================
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    link(rel="icon" href="assets/img/favicon.jpg")
+
+    //- Variables
+    //- ===========================================
+    - var title = "Mães no ENEM"
+    - var description = "Projeto colaborativo para auxiliar mães que irão prestar o Exame Nacional do Ensino Médio ENEM."
+    - var url = "https://maesnoenem.github.io/maesnoenem//"
+    - var image = "https://github.com/maesnoenem/maesnoenem/blob/developer/src/assets/img/logo.jpg"
+
+    //- Open graph
+    //- ===========================================
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:url" content=url)
+    meta(property="og:image" content=image)
+
+    //- Twitter cards
+    //- ===========================================
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:url" content=url)
+    meta(name="twitter:image" content=image)
+
+    //- SEO
+    //- ===========================================
+    meta(name="description" content=description)
+    title=title
+
+  body
+
+    main.container
+      header.header(role="banner")
+
+        div.content-main
+          h1.content-main__title Porque lugar de mãe</br>é onde ela quiser
+          p.content-main__description por mais mães na <span class="content-main__description__featured">universidade</span>.
+
+          div.arrow-down
+            a.arrow-down__link(href="#about")
+              img.arrow-down__link__img(src="./assets/img/arrow-down.png" alt="seta que leva para a seção sobre")
+
+      aside.menu
+        ul.menu__list
+          li.menu__list__item
+            a.menu__list__item__link(href="#about") sobre
+
+          li.menu__list__item
+            a.menu__list__item__link(href="#impact") impacto
+
+          li.menu__list__item
+            a.menu__list__item__link(href="#") depoimentos
+
+          li.menu__list__item
+            a.menu__list__item__link(href="#in-the-media") na mídia
+
+          li.menu__list__item
+            a.menu__list__item__link(href="#join-us") faça parte
+
+          li.menu__list__item
+            a.menu__list__item__link(href="#voluntary") voluntárias
+
+      section#about.text
+        h2.text__title como tudo começou...
+        p.text__description O Mães no ENEM teve início em agosto de 2016 quando a jornalista Fernanda Vicente decidiu participar de uma corrente no Facebook em que mulheres se disponibilizavam a ajudar as mães que iriam prestar o Exame Nacional do Ensino Médio.
+
+        p.text__description Inspirada na corrente lançada na rede social, Fernanda fez uma postagem em seu perfil se oferecendo para cuidar dos filhos das mulheres da região que mora.
+ 
+        p.text__description A adesão e o interesse de outras mulheres foram imediatos e a partir daí, voluntárias de todo o país começaram a surgir. Nascia assim, o Mães no Enem.
+
+      section.text
+        h2.text__title como funciona
+        p.text__description O Mães no Enem promove a aproximação entre as mães e as voluntárias pré cadastradas.
+
+        p.text__description A mulher que decide se voluntariar no projeto solicita uma ficha de inscrição e após preenchida envia juntamente com cópia de documentos e comprovante de residência.
+
+        p.text__description É de total responsabilidade da família da criança que seja feita uma análise minuciosa da vida da voluntária.
+
+        p.text__description Após analise das responsáveis pelo projeto, o nome da voluntária é inserido na lista de voluntárias do projeto.
+
+      section.text
+        h2.text__title apoio psicológico
+        p.text__description O Mães no ENEM se preocupa com o bem estar das mulheres assistidas pelo projeto. Por isso, contamos com apoio psicológico coordenado pela psicóloga Ana Paula Lucena Cordeiro, pós graduada em clínica psicanalítica no IPUB/UFRJ e estudiosa sobre maternidade.
+
+      section.text
+        h2.text__title mães na universidade
+        p.text__description O Mães na Universidade é uma ação dentro do projeto Mães no ENEM. Durante os meses que antecederam o ENEM as coordenadoras constataram que as necessidades das mulheres mães são muitas e essas demandas nem sempre são atendidas pelo poder público.
+
+        p.text__description Depois do exame as mães iniciam um novo processo, que é o ingresso nas universidade. Por conta disso, essas mulheres precisam frequentar aulas, realizar provas e trabalhos. E o Mães na Universidade vem para ajudar nessa nova etapa.
+
+      section#impact.text
+        h2.text__title impacto
+        p.text__description Desde o início da ação, em agosto de 2016, foram cadastradas mais de 245 mulheres voluntárias de várias regiões do país.
+ 
+        p.text__description Atualmente, o projeto conta com voluntárias espalhadas em 21 estados e Distrito Federal.
+
+        p.text__description 44 mães foram atendidas pela ação durante os dias do Enem.
+
+        p.text__description O projeto atende entre 10 e 15 mães por mês
+
+      section#join-us.text
+        h2.text__title faça parte
+        p.text__description Para se cadastrar como voluntária ou acionar ajuda enquanto mãe, é necessário enviar um e-mail para o projeto solicitando a ficha de cadastro. Aguardamos o seu contato.
+
+        form.contact(action="")
+          label.contact__name(for="name") Nome
+          input.contact__input(id="name" type="text" name="name" placeholder="Maria Luiza")
+
+          label.contact__name(for="mail") Email
+          input.contact__input(type="email" id="mail" name="usermail"  placeholder="mluiza@seudominio.com" required)
+
+          label.contact__name(for="text") Mensagem
+          textarea.contact__input(id="text" name="regular" placeholder="Estou disponível em horário integral no sábado dd/mm" required)
+
+          button.btn Enviar mensagem!
+
+      section#voluntary.text
+        h2.text__title voluntárias
+        p.text__description Hoje o projeto já conta com mais de 150 voluntárias espalhadas de norte a sul do país e esse número não para de crescer. Encontre ajuda em sua localização através do Mapa das Mães.
+
+        figure.figure
+          img.figure__map(src="assets/img/mapa.gif" alt="mapa-locaizador")
+
+      footer.footer
+        ul.footer__list
+          li.footer__list__item
+            a.footer__list__item__link(href="#") código de conduta
+
+          li.footer__list__item
+            a.footer__list__item__link(href="#") imprensa
+
+          li.footer__list__item
+            a.footer__list__item__link(href="#") apoiadores
+
+          li.footer__list__item
+            a.footer__list__item__link(href="#") blog
+
+        a.footer__all-rights(href="https://github.com/maesnoenem/maesnoenem" target="_blank") © 2017 Projeto colaborativo, por mulheres, e para mulheres.
+
+    //- Google Analytics
+    //- ===========================================
+    include includes/google-analytics.html
