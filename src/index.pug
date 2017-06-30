@@ -46,7 +46,7 @@ html(lang="pt-br")
   body
 
     main.container
-      header.header
+      header.header(role="banner")
 
         div.content-main
           h1.content-main__title Porque lugar de mãe</br>é onde ela quiser
@@ -120,13 +120,13 @@ html(lang="pt-br")
 
         form.contact(action="")
           label.contact__name(for="name") Nome
-          input.contact__input(id="name" type="text" name="name")
+          input.contact__input(id="name" type="text" name="name" placeholder="Maria Luiza")
 
           label.contact__name(for="mail") Email
-          input.contact__input(type="email" id="mail" name="usermail" required)
+          input.contact__input(type="email" id="mail" name="usermail"  placeholder="mluiza@seudominio.com" required)
 
           label.contact__name(for="text") Mensagem
-          textarea.contact__input(id="text" name="regular")
+          textarea.contact__input(id="text" name="regular" placeholder="Estou disponível em horário integral no sábado dd/mm" required)
 
           button.btn Enviar mensagem!
 
@@ -151,7 +151,7 @@ html(lang="pt-br")
           li.footer__list__item
             a.footer__list__item__link(href="#") blog
 
-        p.footer__all-rights © 2017 Projeto colaborativo, por mulheres, e para mulheres.
+        a.footer__all-rights(href="https://github.com/maesnoenem/maesnoenem" target="_blank") © 2017 Projeto colaborativo, por mulheres, e para mulheres.
 
     //- Google Analytics
     //- ===========================================
