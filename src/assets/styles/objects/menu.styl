@@ -17,7 +17,7 @@
         padding 15px 10px
         width 200px
         height 250px
-        bottom 10%
+        bottom 5%
 
 .menu__list
     list-style none
@@ -32,7 +32,20 @@
 .menu__list__item__link
     text-decoration none
     color var(--primary-color)
+    padding 5px
+
+.menu__list__item__link:hover
+    color var(--secundary-color)
+    background var(--bg-color)
+    font-weight 500
+
+.menu__list__item:active
+    transform translateY(1px)
 
 @media(max-width: 860px)
     .menu__list__item__link
         color var(--secundary-color)
+
+    .menu__list__item__link:hover
+        color var(--bg-color)
+        background var(--secundary-color)
